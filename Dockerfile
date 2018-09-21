@@ -18,4 +18,4 @@ VOLUME /tftpboot
 
 EXPOSE 69
 
-CMD ["sh", "-c", "busybox syslogd -n -O /dev/stdout & in.tftpd --user tftp --address 0.0.0.0:69 -Lvv --secure /tftpboot"]
+CMD ["sh", "-c", "busybox syslogd -n -O /dev/stdout & in.tftpd -Lvv --user tftp --address 0.0.0.0:69  --secure /tftpboot"]
