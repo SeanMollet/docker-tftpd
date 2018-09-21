@@ -4,7 +4,7 @@ FROM alpine:3.6
 MAINTAINER Sean Mollet sean@malmoset.com
 
 # Start the container with the follonwing command:
-#   docker run -it -p 69:69 -v $(pwd):/tftpboot --name tftp smollet/tftp
+#   docker run -it -p 69:69 -v $(pwd):/tftpboot --name tftp seanmollet/tftp
 
 #Create user
 RUN adduser -S tftp
