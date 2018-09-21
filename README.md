@@ -6,7 +6,7 @@ Docker image with alpine and tftpd
 This image can be built on your local box using this command:
 
 ```
-docker build -t smollet/docker-tftpd https://github.com/SeanMollet/docker-tftpd.git
+docker build -t smollet/tftpd https://github.com/SeanMollet/docker-tftpd.git
 ```
 
 ## Run
