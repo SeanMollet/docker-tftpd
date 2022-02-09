@@ -1,5 +1,5 @@
 # Docker-alpine-tftp
-FROM alpine:3.6
+FROM alpine:3.9.3
 
 MAINTAINER Sean Mollet sean@malmoset.com
 
@@ -18,4 +18,4 @@ VOLUME /tftpboot
 
 EXPOSE 69
 
-CMD ["sh", "-c", "busybox syslogd -n -O /dev/stdout & in.tftpd -Lvv --user tftp --address 0.0.0.0:69  --secure /tftpboot"]
+CMD ["sh", "-c", "busybox syslogd -n -O /dev/stdout & in.tftpd -Lvv --user tftp --address 0.0.0.0:69  -c --secure /tftpboot"]
